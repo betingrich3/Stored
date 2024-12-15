@@ -14,13 +14,13 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 let desc = `*╭┈───────────────•*
- 〈*Hello ${pushname} Welcome*   
+*〈Hello ${pushname} Welcome*   
 *╰┈───────────────•*
 *╭┈───────────────•*
-*│  ◦* ʀᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}
-*│  ◦* ʀᴀᴍ ᴜꜱᴀɢᴇ : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-*│  ◦* ᴍᴏᴅᴇ : *[${config.MODE}]*
-*│  ◦* ᴘʀᴇғɪx : *[${config.PREFIX}]*
+*│  ◦* *ʀᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}*
+*│  ◦* *ʀᴀᴍ ᴜꜱᴀɢᴇ : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
+*│  ◦* *ᴍᴏᴅᴇ* : *[${config.MODE}]*
+*│  ◦* *ᴘʀᴇғɪx* : *[${config.PREFIX}]*
 *╰┈───────────────•*
 *◆─〈 ${config.BOT_NAME}✦〉─◆*
 *╭┈───────────────•*
