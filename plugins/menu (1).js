@@ -14,7 +14,7 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 let desc = `*╭┈───────────────•*
-*Hello *${pushname} Welcome*   
+ 〈*Hello ${pushname} Welcome*   
 *╰┈───────────────•*
 *╭┈───────────────•*
 *│  ◦* ʀᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}
@@ -22,12 +22,12 @@ let desc = `*╭┈───────────────•*
 *│  ◦* ᴍᴏᴅᴇ : *[${config.MODE}]*
 *│  ◦* ᴘʀᴇғɪx : *[${config.PREFIX}]*
 *╰┈───────────────•*
-*◆─〈 ✦${config.BOT_NAME}✦ 〉─◆*
+*◆─〈 ${config.BOT_NAME}✦〉─◆*
 *╭┈───────────────•*
-*├ 1* •  *OWNER *
+*├ 1* • *OWNER*
 *├ 2* • *DOWNLOAD‎*
 *├ 3* • *GROUPS*
-*├ 4* • *INFO *
+*├ 4* • *INFO*
 *├ 5* • *RANDOM*
 *├ 6* • *CONVERT*
 *├ 7* • *AI*
