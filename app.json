@@ -117,7 +117,7 @@
     "STATUS_REPLY": {
       "description": "enter your caption if you want to show on status reply.",
       "required": false,
-      "value": "."
+      "value": ""
     }
 
 
