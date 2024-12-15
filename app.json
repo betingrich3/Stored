@@ -1,7 +1,7 @@
 {
   "name": "Bugatti",
-  "description": "Superb Bot By Marisel",
-  "logo": "https://i.imgur.com/B43yw9c.jpeg",
+  "description": "Active User Bot",
+  "logo": "https://i.imgur.com/TMyXjOj.jpeg",
   "keywords": ["bot"],
   "success_url": "/",
 
@@ -14,23 +14,112 @@
     },  
     
     "ALIVE_IMG": {
-      "description": "you can use this public mongodb url if you have your personal key So you can use him.",
+      "description": "If you Change this The bot wont work.",
       "required": true,
       "value": "https://i.imgur.com/eX51M51.jpeg"
-    },
-
+    }, 
+    
     "ALIVE_MSG": {
-      "description": "Alive Message is Here.",
+      "description": "Do not Change This.",
       "required": true,
-      "value": "*Bugatti Is Always Active*"
+      "value": "*Bugatti is Always Active*"
+    },
+    
+    "PREFIX": {
+      "description": "paste your bot prefix note! Don't apply null prefix.",
+      "required": true,
+      "value": "."
+    },
+    
+    "MODE": {
+      "description": "select your bot work type public-private-inbox-group.",
+      "required": true,
+      "value": "private"
     }, 
 
-    "AUTO_REACT_STATUS": {
-      "description": "you can use this public mongodb url if you have your personal key So you can use him.",
+    "AUTO_VOICE": {
+      "description": "Make it true if you want bot auto voice.",
       "required": true,
       "value": "true"
-    }
+    }, 
+
+    "AUTO_REPLY": {
+      "description": "Make it true if you want bot auto reply.",
+      "required": true,
+      "value": "true"
+    }, 
+
+    "AUTO_STICKER": {
+      "description": "Make it true if you want bot auto sticker.",
+      "required": true,
+      "value": "false"
+    }, 
+
+    "AUTO_READ_STATUS": {
+      "description": "Make it true if you want bot auto auto_read_status.",
+      "required": true,
+      "value": "true"
+    }, 
+
+    "ANTI_LINK": {
+      "description": "Make it true if you want bot auto remove group link.",
+      "required": true,
+      "value": "true"
+    },
+
+    "ANTI_BAD": {
+      "description": "Make it true if you want bot auto delete bad words from group example xxx porn etc.",
+      "required": true,
+      "value": "true"
+    }, 
+
+    "FAKE_RECORDING": {
+      "description": "Make it true if you want bot fake record.",
+      "required": true,
+      "value": "false"
+    },
+
+    "AUTO_REACT": {
+      "description": "Make it true if you want bot AutoReact.",
+      "required": false,
+      "value": "false"
+    },
+
+    "OWNER_REACT": {
+      "description": "Make it true if you want bot OwnerReact.",
+      "required": false,
+      "value": "false"
     
+    }, 
+
+    "BOT_NAME": {
+      "description": "write Bot Name here.",
+      "required": true,
+      "value": "*Bugatti*"
+    }, 
+
+    "HEART_REACT": {
+      "description": "Make it true if you want bot only heart ♥️ emjois reaction .",
+      "required": true,
+      "value": "false"
+    }, 
+
+    "READ_MESSAGE": {
+      "description": "Make it true if you want bot read your all sms just now.",
+      "required": true,
+      "value": "false"
+    }, 
+    "CAPTION": {
+      "description": "enter your caption if you want to show on menu.",
+      "required": true,
+      "value": "*BUGATTI BY MARISEL*"
+    }, 
+    "STATUS_REPLY": {
+      "description": "enter your caption if you want to show on status reply.",
+      "required": false,
+      "value": "🎓"
+    }
+
 
 },
 
