@@ -95,7 +95,7 @@
     "BOT_NAME": {
       "description": "write Bot Name here.",
       "required": true,
-      "value": "*Bugatti*"
+      "value": "Bugatti"
     }, 
 
     "HEART_REACT": {
