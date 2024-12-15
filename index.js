@@ -220,7 +220,7 @@ m.react("")
 // Auto React 
 if (!isReact && senderNumber !== botNumber) {
     if (config.AUTO_REACT === 'false') {
-        const reactions = ['😊'];
+        const reactions = [''];
 
         const randomReaction = reactions[Math.floor(Math.random() * reactions.length)]; // 
         m.react(randomReaction);
@@ -230,7 +230,7 @@ if (!isReact && senderNumber !== botNumber) {
 // Owner React
 if (!isReact && senderNumber === botNumber) {
     if (config.OWNER_REACT === 'false') {
-        const reactions = ['😊'];
+        const reactions = [''];
         const randomOwnerReaction = reactions[Math.floor(Math.random() * reactions.length)]; // 
         m.react(randomOwnerReaction);
     }
