@@ -26,7 +26,7 @@ menu[commands[i].category] += `*┋* ${commands[i].pattern}\n`;
 }
 
 let madeMenu = `*╭─────────────────❒⁠⁠⁠⁠*
-*⇆ Hello *${pushname}*
+ 〈*Hello ${pushname}*
 *┕─────────────────❒*
 
 *Marisel Made This Menu*
