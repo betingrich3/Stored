@@ -1,0 +1,43 @@
+{
+  "name": "Bugatti",
+  "description": "Superb Bot By Marisel",
+  "logo": "https://i.imgur.com/B43yw9c.jpeg",
+  "keywords": ["bot"],
+  "success_url": "/",
+
+    "stack": "container",
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true,
+      "value": ""
+    },  
+    
+    "ALIVE_IMG": {
+      "description": "you can use this public mongodb url if you have your personal key So you can use him.",
+      "required": true,
+      "value": "https://i.imgur.com/eX51M51.jpeg"
+    },
+
+    "ALIVE_MSG": {
+      "description": "Alive Message is Here.",
+      "required": true,
+      "value": "*Bugatti Is Always Active*"
+    }, 
+
+    "AUTO_REACT_STATUS": {
+      "description": "you can use this public mongodb url if you have your personal key So you can use him.",
+      "required": true,
+      "value": "true"
+    }
+    
+
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
