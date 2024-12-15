@@ -10,7 +10,7 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 let madeMenu = `❁ ════ ❃•⇆•❃ ════ ❁
-*Hi ${pushname}*\n\n * Marisel Here*\n\n *Creator of*\n\n *Mercedes, Bugatti & Bentley*\n\n *Please Follow Me*\n\n\n *https://whatsapp.com/channel/0029Vajvy2kEwEjwAKP4SI0x*
+*Hi ${pushname}*\n\n *Marisel Here Creator of Mercedes, Bugatti & Bentley Please Follow Me* \n\n\n *https://whatsapp.com/channel/0029Vajvy2kEwEjwAKP4SI0x*
 ❁ ════ ❃•⇆•❃ ════ ❁
 > *Marisel*
 `
