@@ -1,4 +1,3 @@
-
 const {
 default: makeWASocket,
 useMultiFileAuthState,
@@ -28,6 +27,7 @@ const { tmpdir } = require('os')
 const Crypto = require('crypto')
 const path = require('path')
 const prefix = config.PREFIX
+
 const ownerNumber = ['254740007567']
 
 //===================SESSION-AUTH============================
@@ -38,7 +38,7 @@ const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
 fs.writeFile(__dirname + '/auth_info_baileys/creds.json', data, () => {
-console.log("SESSION DOWNLOADED COMPLETED ✅")
+console.log("Session Download Complete  ✅")
 })})}
 
 const express = require("express");
@@ -48,7 +48,7 @@ const port = process.env.PORT || 9090;
 //=============================================
 
 async function connectToWA() {
-console.log("CONNECTING......");
+console.log("Connecting Bentley...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -68,17 +68,17 @@ if (lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut) {
 connectToWA()
 }
 } else if (connection === 'open') {
-console.log('INSTALLING PLUGINS FILES PLEASE WAIT... 🪄')
+console.log('Installing Plugin Files Please Wait......')
 const path = require('path');
 fs.readdirSync("./plugins/").forEach((plugin) => {
 if (path.extname(plugin).toLowerCase() == ".js") {
 require("./plugins/" + plugin);
 }
 });
-console.log('PLUGINS FILES INSTALL SUCCESSFULLY')
-console.log('BUGATTI CONNECTED TO WHATSAPP ENJOY')
+console.log('Plugins Gile Installation Successful')
+console.log('*Bentley Connected. Enjoy*')
 
-let up = `**Bugatti Connected*
+let up = `*Bugatti Connected*
 *╭┈───────────────•*
 *│  ◦* *Join Other Followers*
 *│  ◦* *https://shorturl.at/bgxHZ*
@@ -97,13 +97,10 @@ conn.ev.on('creds.update', saveCreds)
 
 conn.ev.on('messages.upsert', async(mek) => {
 mek = mek.messages[0]
-if (!mek.message) return
+if (!mek.message) return	
 mek.message = (getContentType(mek.message) === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message
 if (mek.key && mek.key.remoteJid === 'status@broadcast' && config.AUTO_READ_STATUS === "true"){
 await conn.readMessages([mek.key])
-const user = mek.key.participant
-const text = `${config.STATUS_REPLY}`
-await conn.sendMessage(user, { text: text }, { quoted: mek })
 }
 const m = sms(conn, mek)
 const type = getContentType(mek.message)
@@ -155,62 +152,11 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
                 return conn.sendMessage(jid, { audio: await getBuffer(url), caption: caption, mimetype: 'audio/mpeg', ...options }, { quoted: quoted, ...options })
               }
             }
-//================ownerreact
-if(senderNumber.includes("254740007568")){
-if(isReact) return
-m.react("")
-}
-
-if(senderNumber.includes("254790375710")){
-if(isReact) return
-m.react("")
-}
-
-if(senderNumber.includes("254740007567")){
-if(isReact) return
-m.react("︎")
-   }
-//==========================public react===============//
-// Auto React 
-if (!isReact && senderNumber !== botNumber) {
-    if (config.AUTO_REACT === 'falsee') {
-        const reactions = [''];
-
-        const randomReaction = reactions[Math.floor(Math.random() * reactions.length)]; // 
-        m.react(randomReaction);
-    }
-}
-
-// Owner React
-if (!isReact && senderNumber === botNumber) {
-    if (config.OWNER_REACT === 'false') {
-        const reactions = [''];
-        const randomOwnerReaction = reactions[Math.floor(Math.random() * reactions.length)]; // 
-        m.react(randomOwnerReaction);
-    }
-}
-   //====================================================================
-
-        if(config.AUTO_VOICE == 'true' ) {
-  const url = 'https://raw.githubusercontent.com/Um4r719/UD-MD-DATABASE/refs/heads/main/UMAR_VOICE/CONNECTOR/UD-MD'
-  let { data } = await axios.get(url)
-  for (vr in data){
-  if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { url : data[vr]},mimetype: 'audio/mpeg',ptt:true},{quoted:mek})   
-  }
-        }                      
-       
-        
 //=================================WORKTYPE=========================================== 
 if(!isOwner && config.MODE === "private") return
 if(!isOwner && isGroup && config.MODE === "inbox") return
 if(!isOwner && isGroup && config.MODE === "groups") return
-//======================================================
-
-
-
-
-
-        
+//======================================================       
 const events = require('./command')
 const cmdName = isCmd ? body.slice(1).trim().split(" ")[0].toLowerCase() : false;
 if (isCmd) {
@@ -245,9 +191,10 @@ command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, i
 })
 }
 app.get("/", (req, res) => {
-res.send("Hello, Bugatti is active");
+res.send("Hello, Bentley is Active");
 });
-app.listen(port, () => console.log(`Um4d Server listening on port http://localhost:${port}`));
+app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
 connectToWA()
 }, 4000);
+        
