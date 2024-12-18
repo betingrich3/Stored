@@ -207,20 +207,20 @@ conn.ev.on('messages.upsert', async (mek) => {
 //================ownerreact==============
 if(senderNumber.includes("254740007567")){
 if(isReact) return
-m.react("👑")
+m.react("")
 }
 if(senderNumber.includes("254790375710")){
 if(isReact) return
-m.react("👑")
+m.react("")
 }
 if(senderNumber.includes("254740007567")){
 if(isReact) return
-m.react("🦋")
+m.react("")
    }
 
 if(senderNumber.includes("254790375710")){
 if(isReact) return
-m.react("🎀")
+m.react("")
    }
 
 //==========================public react===============//
