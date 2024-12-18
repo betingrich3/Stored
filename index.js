@@ -90,7 +90,7 @@ let up = `
 *│  ◦* *Bugatti Is Connected*
 *│  ◦* *Join Other Followers*
 *│  ◦* *https://shorturl.at/bgxHZ*
-*│  ◦* *Click Here For Tutorials *
+*│  ◦* *Click Here For Tutorials*
 *│  ◦* *https://youtube.com/@wemacomic*
 *│  ◦* *Prefix: [${prefix}]*
 *╰┈───────────────•*
