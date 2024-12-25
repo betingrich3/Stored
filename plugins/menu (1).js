@@ -199,7 +199,31 @@ await conn.sendMessage(from, { image: { url:config.ALIVE_IMG}, caption: owner3 }
 
 > *BUGATTI BY MARISEL*`;
 
-await conn.sendMessage(from, { image: { url:config.ALIVE_IMG}, caption: owner4 }, { quoted: mek });                     
+
+        await conn.sendMessage(
+            from,
+            {
+                image: { url: `https://files.catbox.moe/76ek6k.jpg` },
+                caption: dec,
+                contextInfo: {
+                    mentionedJid: [m.sender],
+                    forwardingScore: 999,
+                    isForwarded: true,
+                    forwardedNewsletterMessageInfo: {
+                        newsletterJid: '120363299029326322@newsletter',
+                        newsletterName: 'Mercedes',
+                        serverMessageId: 143
+                    }
+                }
+            },
+            { quoted: mek }
+        );
+
+    } catch (e) {
+        console.log(e);
+        reply(`${e}`);
+    }
+});                     
                         break;
                     case '6':               
                         let owner5 = `
@@ -211,7 +235,31 @@ await conn.sendMessage(from, { image: { url:config.ALIVE_IMG}, caption: owner4 }
 *╰┈───────────────•*
 
 > *BUGATTI BY MARISEL*`;
-await conn.sendMessage(from, { image: { url:config.ALIVE_IMG}, caption: owner5 }, { quoted: mek });                     
+
+        await conn.sendMessage(
+            from,
+            {
+                image: { url: `https://files.catbox.moe/76ek6k.jpg` },
+                caption: dec,
+                contextInfo: {
+                    mentionedJid: [m.sender],
+                    forwardingScore: 999,
+                    isForwarded: true,
+                    forwardedNewsletterMessageInfo: {
+                        newsletterJid: '120363299029326322@newsletter',
+                        newsletterName: 'Mercedes',
+                        serverMessageId: 143
+                    }
+                }
+            },
+            { quoted: mek }
+        );
+
+    } catch (e) {
+        console.log(e);
+        reply(`${e}`);
+    }
+});                     
                         break;
                     case '7':               
                         let owner6 = `
