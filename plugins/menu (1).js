@@ -14,7 +14,7 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 let desc = `*╭┈───────────────•*
-*Hello *${pushname} Welcome*   
+*〈 Hello *${pushname} Welcome*   
 *╰┈───────────────•*
 *╭┈───────────────•*
 *│  ◦* ʀᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}
