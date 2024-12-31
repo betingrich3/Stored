@@ -57,7 +57,7 @@ const vv = await conn.sendMessage(from, {
       body: `${pushname}`, 
       mediaType: 1, 
       sourceUrl: "https://whatsapp.com/channel/0029Vajvy2kEwEjwAKP4SI0x", 
-      thumbnailUrl: "https://files.catbox.moe/qti3gn.jpg" ,
+      thumbnailUrl: "https://i.imgur.com/J7ADEky.jpeg" ,
       renderLargerThumbnail: true,
       showAdAttribution: true
     }
