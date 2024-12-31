@@ -16,7 +16,7 @@
     "ALIVE_IMG": {
       "description": "If you Change this The bot wont work.",
       "required": true,
-      "value": "https://i.imgur.com/eX51M51.jpeg"
+      "value": "https://i.imgur.com/RPO25ES.jpeg,https://i.imgur.com/J7ADEky.jpeg"
     }, 
     
     "ALIVE_MSG": {
