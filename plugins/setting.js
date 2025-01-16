@@ -41,9 +41,8 @@ let madeSetting =`*╭────⚃* *SETTINGS* *⚃*
 *┊* *HEART_REACT:* ➠ ${config.HEART_REACT} 
 *┊* *OWNER_REACT:* ➠ ${config.OWNER_REACT} 
 *┊* *BOT_NAME:* ➠ ${config.BOT_NAME}
-
-> By Marisel
 *╰═════════════⚃*
+> *By Marisel*
 `
 
 
